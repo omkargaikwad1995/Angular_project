@@ -1,0 +1,75 @@
+[
+    {
+      "id":1,
+      "name":"Acmella repens",
+      "price":200,
+      "img":"assets/images/plants/acmella_repens.jpg"
+    },
+    {
+      "id":2,
+      "name":"Alternanthera ficoidea",
+      "price":350,
+      "img":"assets/images/plants/alternanthera_ficoidea.jpg"
+    },
+    {
+      "id":3,
+      "name":"Alternanthera sessilis",
+      "price":150,
+      "img":"assets/images/plants/alternanthera_sessilis_purple.jpg"
+    },
+    {
+      "id":4,
+      "name":"Ammania SP bonsai",
+      "price":250,
+      "img":"assets/images/plants/ammannia-sp-bonsai-300x300.jpg"
+    },
+    {
+      "id":5,
+      "name":"Bacopa caroliniana",
+      "price":300,
+      "img":"assets/images/plants/bacopa_caroliniana.jpg"
+    },
+    {
+      "id":6,
+      "name":"Hypgrophila araguaia",
+      "price":350,
+      "img":"assets/images/plants/hygrophila_araguaia.png"
+    },
+    {
+      "id":7,
+      "name":"Hyptis lorentizana",
+      "price":400,
+      "img":"assets/images/plants/hyptis_lorentziana.jpg"
+    },
+    {
+      "id":8,
+      "name":"Lilaeopsis brasilin",
+      "price":200,
+      "img":"assets/images/plants/lilaeopsis-brasiliensis-300x300.jpg"
+    },
+    {
+      "id":9,
+      "name":"Myrophyllum aquatic",
+      "price":100,
+      "img":"assets/images/plants/myriophyllum_aquaticum_2.jpg"
+    },
+    {
+      "id":10,
+      "name":"Nitella",
+      "price":150,
+      "img":"assets/images/plants/nitella-300x300_1_.jpg"
+    },
+    {
+      "id":11,
+      "name":"Polygonum SP",
+      "price":250,
+      "img":"assets/images/plants/nitella-300x300_1_.jpg"
+    },
+    {
+      "id":12,
+      "name":"Vallisneria",
+      "price":300,
+      "img":"assets/images/plants/vallisneria-nana-300x300.jpg"
+    }
+
+]

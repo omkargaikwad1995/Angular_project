@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+    <img [src]="myimage" class="" alt="...">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><i class="bi bi-tsunami">&nbsp;&nbsp;</i>Fishkart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/plants']">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/fish']">Fishes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/product']">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/food']">Fish Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/contact']">Contact us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/fish']">Fishes</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/plants']">Plants</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/food']">Food products</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ">
+          <!--<input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-4" type="submit">Search</button>-->
+          <button type="button" class="btn btn-primary position-relative me-4" (click)="showCartValue()">
+            <i class="bi bi-cart4"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {{cv}}
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+</body>
+<router-outlet></router-outlet>
+<hr>
+<footer class="footer">
+  <div>
+    <h4>Email Id:- fishkart123@gmail.com</h4>
+  </div>
+  
+  <div class="element">
+    <div><h4>Published by Omkar Gaikwad</h4></div>
+  <div><h4>Address: Lohegaon, Pune</h4></div>
+
+  </div>
+  <div class="copy">
+    <i><br>Fishkart@Copyright 2021</i>
+  </div>
+  
+</footer>
+
+</html>

@@ -30,11 +30,22 @@ export class PlantsComponent implements OnInit {
   smallimg:string="assets/seed (2).jpg"
 
 
-  SearchByName=''
-  FilterByName(event:any){
-    console.log(event.target.value)
-    this.SearchByName=(event.target.value)
-    this.plants=this.plants.filter(product=> product.name.toLowerCase().includes(this.SearchByName.toLowerCase()))
+  private _SearchByName=''
+  // FilterByName(event:any){
+  //   console.log(event.target.value)
+  //   this.SearchByName=(event.target.value)
+  //   this.plants=this.plants.filter(product=> product.name.toLowerCase().includes(this.SearchByName.toLowerCase()))
+  // }
+
+  get SearchByName()
+  {
+    return this._SearchByName
+  }
+
+  set SearchByName(product_name)
+  {
+    this._SearchByName=product_name
+    this.plants=this.plants.filter(product=> product.name.toLowerCase().includes(product_name.toLowerCase()))
   }
 
 

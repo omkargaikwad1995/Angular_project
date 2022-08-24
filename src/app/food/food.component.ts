@@ -45,6 +45,16 @@ export class FoodComponent implements OnInit {
     this.Fish_food=this.Fish_food.filter(product=> product.name.toLowerCase().includes(this.SearchByName.toLowerCase()))
   }
 
+  start_index=0
+  end_index=4
+  item_per_page=4
+  page_number=1
+
+  nextPage(page_number:number)
+  {
+    this.start_index=(page_number-1)*this.item_per_page
+    this.end_index=(page_number)*this.item_per_page
+  }
   
 
 
